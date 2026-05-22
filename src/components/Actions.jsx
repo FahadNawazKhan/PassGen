@@ -21,88 +21,70 @@ const Actions = ({
         symbolsAllowed
 
     return (
-        <div className='flex text-white font-bold justify-center items-center'>
-
-            <input
-                type="checkbox"
-                className='accent-mauve-600 h-5 w-5 mr-2'
-                id="uppercase"
-                checked={uppercaseAllowed}
-
-                onChange={() => {
-
-                    if (checklist == 1 && uppercaseAllowed) {
-                        return
-                    }
-
-                    setUppercaseAllowed(prev => !prev)
-                }}
-            />
-
-            <label htmlFor="uppercase" className='mr-5'>
+        <div className='flex flex-wrap justify-center gap-4 text-white font-bold'>
+            <label className='flex items-center gap-2'>
+                <input
+                    type="checkbox"
+                    className='accent-mauve-600 h-5 w-5'
+                    id="uppercase"
+                    checked={uppercaseAllowed}
+                    onChange={() => {
+                        if (checklist == 1 && uppercaseAllowed) {
+                            return
+                        }
+                        setUppercaseAllowed(prev => !prev)
+                    }}
+                />
                 Uppercase
             </label>
 
-            <input
-                type="checkbox"
-                className='accent-mauve-600 h-5 w-5 mr-2'
-                id="lowercase"
-                checked={lowercaseAllowed}
-
-                onChange={() => {
-
-                    if (checklist == 1 && lowercaseAllowed) {
-                        return
-                    }
-
-                    setLowercaseAllowed(prev => !prev)
-                }}
-            />
-
-            <label htmlFor="lowercase" className='mr-5'>
+            <label className='flex items-center gap-2'>
+                <input
+                    type="checkbox"
+                    className='accent-mauve-600 h-5 w-5'
+                    id="lowercase"
+                    checked={lowercaseAllowed}
+                    onChange={() => {
+                        if (checklist == 1 && lowercaseAllowed) {
+                            return
+                        }
+                        setLowercaseAllowed(prev => !prev)
+                    }}
+                />
                 Lowercase
             </label>
 
-            <input
-                type="checkbox"
-                className='accent-mauve-600 h-5 w-5 mr-2'
-                id="numbers"
-                checked={numbersAllowed}
-
-                onChange={() => {
-
-                    if (checklist == 1 && numbersAllowed) {
-                        return
-                    }
-
-                    setNumbersAllowed(prev => !prev)
-                }}
-            />
-
-            <label htmlFor="numbers" className='mr-5'>
+            <label className='flex items-center gap-2'>
+                <input
+                    type="checkbox"
+                    className='accent-mauve-600 h-5 w-5'
+                    id="numbers"
+                    checked={numbersAllowed}
+                    onChange={() => {
+                        if (checklist == 1 && numbersAllowed) {
+                            return
+                        }
+                        setNumbersAllowed(prev => !prev)
+                    }}
+                />
                 Numbers
             </label>
 
-            <input
-                type="checkbox"
-                className='accent-mauve-600 h-5 w-5 mr-2'
-                id="symbols"
-                checked={symbolsAllowed}
-
-                onChange={() => {
-
-                    if (checklist == 1 && symbolsAllowed) {
-                        return
-                    }
-
-                    setSymbolsAllowed(prev => !prev)
-                }}
-            />
-
-            <label htmlFor="symbols" className='mr-5'>
+            <label className='flex items-center gap-2'>
+                <input
+                    type="checkbox"
+                    className='accent-mauve-600 h-5 w-5'
+                    id="symbols"
+                    checked={symbolsAllowed}
+                    onChange={() => {
+                        if (checklist == 1 && symbolsAllowed) {
+                            return
+                        }
+                        setSymbolsAllowed(prev => !prev)
+                    }}
+                />
                 Symbols
             </label>
-
         </div>
     )
 }

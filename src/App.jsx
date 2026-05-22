@@ -51,38 +51,36 @@ const App = () => {
 
 
   return (
-    
-      <div className='flex flex-col justify-center items-center h-screen  bg-mauve-700 gap-5'>
+    <div className='flex flex-col justify-center items-center h-screen bg-mauve-700 gap-5'>
 
-        <Input
-          password={password}
-          setPassword={setPassword}
-          generatePassword={generatePassword}
-          copied={copied}
-          copyPassword={copyPassword}
-        />
+      <Input
+        password={password}
+        setPassword={setPassword}
+        generatePassword={generatePassword}
+        copied={copied}
+        copyPassword={copyPassword}
+      />
 
-        <Slider
-          passwordLength={passwordLength}
-          setpasswordlength={setPasswordLength}
-        />
+      <Slider
+        passwordLength={passwordLength}
+        setpasswordlength={setPasswordLength}
+      />
 
-        <Actions
-          uppercaseAllowed={uppercaseAllowed}
-          setUppercaseAllowed={setUppercaseAllowed}
+      <Actions
+        uppercaseAllowed={uppercaseAllowed}
+        setUppercaseAllowed={setUppercaseAllowed}
 
-          lowercaseAllowed={lowercaseAllowed}
-          setLowercaseAllowed={setLowercaseAllowed}
+        lowercaseAllowed={lowercaseAllowed}
+        setLowercaseAllowed={setLowercaseAllowed}
 
-          numbersAllowed={numbersAllowed}
-          setNumbersAllowed={setNumbersAllowed}
+        numbersAllowed={numbersAllowed}
+        setNumbersAllowed={setNumbersAllowed}
 
-          symbolsAllowed={symbolsAllowed}
-          setSymbolsAllowed={setSymbolsAllowed}
-        />
+        symbolsAllowed={symbolsAllowed}
+        setSymbolsAllowed={setSymbolsAllowed}
+      />
 
-      </div>
-    
+    </div>
   )
 }
 

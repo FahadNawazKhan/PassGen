@@ -2,12 +2,12 @@ import React from 'react'
 
 const Slider = ({ passwordLength, setpasswordlength }) => {
     return (
-        <div className='flex gap-2 justify-center items-center'>
-            <label className="my-5 text-white font-bold " htmlFor="slider">Password Length: {passwordLength}</label>
-            <input type="range" id="slider" 
+        <div className='flex flex-col gap-3 items-center sm:flex-row sm:justify-center sm:items-center'>
+            <label className="text-white font-bold" htmlFor="slider">Password Length: {passwordLength}</label>
+            <input type="range" id="slider"
                 min={4}
                 max={15}
-                value={passwordLength} className='my-5 w-70 accent-mauve-500'
+                value={passwordLength} className='w-full sm:w-72 accent-mauve-500'
                 onChange={(e) => setpasswordlength(e.target.value)} />
         </div>
     )
