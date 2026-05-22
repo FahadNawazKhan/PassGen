@@ -1,16 +1,75 @@
-# React + Vite
+# PassGen
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A lightweight React + Vite password generator built with Tailwind CSS.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+PassGen allows users to generate secure passwords with customizable options:
 
-## React Compiler
+- Select password length with a slider (4–15 characters)
+- Toggle inclusion of lowercase, uppercase, numbers, and symbols
+- Generate a random password instantly
+- Copy the generated password to the clipboard with a single click
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The app uses React hooks for state management and updates the password automatically when options change.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `generate` button for creating a new password
+- `copy` button with visual feedback (`copied` state)
+- Password length slider
+- Character type toggles with built-in minimum selection validation
+- Minimal Tailwind CSS styling
+
+## Tech Stack
+
+- React 19
+- Vite
+- Tailwind CSS 4
+- ESLint
+
+## Getting Started
+
+### Install dependencies
+
+```bash
+pnpm install
+```
+
+### Run locally
+
+```bash
+pnpm dev
+```
+
+Open the local development URL shown in the terminal.
+
+### Build for production
+
+```bash
+pnpm build
+```
+
+### Preview production build
+
+```bash
+pnpm preview
+```
+
+## Project Structure
+
+- `src/App.jsx` — main application logic and state
+- `src/components/Input.jsx` — password display, generate, and copy buttons
+- `src/components/Slider.jsx` — password length slider control
+- `src/components/Actions.jsx` — toggle options for character types
+- `src/index.css` — Tailwind CSS import and global styles
+- `vite.config.js` — Vite configuration
+
+## Notes
+
+- The password generator currently prevents deselecting the last remaining character type.
+- The app uses `navigator.clipboard.writeText` to copy the password.
+
+## License
+
+This repository is open and available for personal or educational use.
