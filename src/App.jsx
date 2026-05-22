@@ -51,8 +51,8 @@ const App = () => {
 
 
   return (
-    <div className='p-5 bg-mauve-800 h-screen'>
-      <div className='flex flex-col justify-center items-center h-150 rounded-lg bg-mauve-700 gap-5'>
+    
+      <div className='flex flex-col justify-center items-center h-screen  bg-mauve-700 gap-5'>
 
         <Input
           password={password}
@@ -82,7 +82,7 @@ const App = () => {
         />
 
       </div>
-    </div>
+    
   )
 }
 

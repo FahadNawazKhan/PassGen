@@ -25,7 +25,7 @@ const Actions = ({
 
             <input
                 type="checkbox"
-                className='h-5 w-5 mr-2'
+                className='accent-mauve-600 h-5 w-5 mr-2'
                 id="uppercase"
                 checked={uppercaseAllowed}
 
@@ -45,7 +45,7 @@ const Actions = ({
 
             <input
                 type="checkbox"
-                className='h-5 w-5 mr-2'
+                className='accent-mauve-600 h-5 w-5 mr-2'
                 id="lowercase"
                 checked={lowercaseAllowed}
 
@@ -65,7 +65,7 @@ const Actions = ({
 
             <input
                 type="checkbox"
-                className='h-5 w-5 mr-2'
+                className='accent-mauve-600 h-5 w-5 mr-2'
                 id="numbers"
                 checked={numbersAllowed}
 
@@ -85,7 +85,7 @@ const Actions = ({
 
             <input
                 type="checkbox"
-                className='h-5 w-5 mr-2'
+                className='accent-mauve-600 h-5 w-5 mr-2'
                 id="symbols"
                 checked={symbolsAllowed}
 
