@@ -4,6 +4,9 @@ A lightweight React + Vite password generator built with Tailwind CSS.
 
 ## Overview
 
+<img width="1910" height="957" alt="image" src="https://github.com/user-attachments/assets/f17c0743-429a-4f40-8a1b-5abb6cadf9ad" />
+
+
 PassGen allows users to generate secure passwords with customizable options:
 
 - Select password length with a slider (4–15 characters)
